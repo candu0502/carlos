@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .fotos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .fotos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #tempo-juntos {
+            font-size: 1.5em;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #ff69b4;
+        }
+
+        .mensagem {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffe4e1;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #ff69b4; /* Cor uniforme */
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        .botao-musica {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 40px auto 0 auto;
+            display: inline-block;
+        }
+
+        .botao-musica:hover {
+            background-color: #ff4d99;
+        }
+
+        /* Nova aba */
+        #nova-aba {
+            margin-top: 40px; /* Aumentado o espaçamento entre a aba 2 e a aba 3 */
+            background-color: #ffe4e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #ff69b4; /* Cor uniforme */
+        }
+
+        #nova-aba h2 {
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        #nova-aba p {
+            font-size: 1.2em;
+        }
+    </style>
+    <script>
+        function atualizarTempo() {
+            const inicio = new Date("2024-09-14T01:00:00");
+            const agora = new Date();
+            const diff = agora - inicio;
+
+            const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("tempo-juntos").innerText =
+                Estamos juntos há: ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💖;
+        }
+
+        setInterval(atualizarTempo, 1000);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>FICA COMIGO, SOMOS BONS JUNTOS!!!!</h1>
+    </header>
+
+    <main>
+        <section class="fotos">
+            <img  src="https://i.ibb.co/PrsWbjL/Whats-App-Image-2024-12-22-at-18-53-33-2.jpg" alt="Foto do casal 1" border="0">
+            <img  src="https://i.ibb.co/5jrZXP9/Whats-App-Image-2024-12-22-at-19-57-18.jpg"" alt="Foto do casal 2" border="0"> 
+            <img  src="https://i.ibb.co/c6nFXFd/Whats-App-Image-2024-12-22-at-18-53-33.jpg" alt="Foto do casal 3" border="0">
+        </section>
+
+        <p id="tempo-juntos"></p>
+
+        <div class="mensagem">
+            <p><strong>Cada momento ao seu lado é inesquecível.</strong> Obrigado por ser meu mundin! 💕</p>
+        </div>
+
+        <div class="mensagem">
+            <p><strong>Quero te agradecer por tudo.</strong> Pelo companheirismo constante, pelas palavras que me acolheram quando eu mais precisava, pelo carinho e pelo afeto que me mostraram o que é cuidado verdadeiro. Talvez você nunca tenha percebido, mas foram esses gestos que me salvaram nos dias mais difíceis. Quando o estresse parecia me quebrar, sua presença era o que me trazia de volta. Mesmo que eu não demonstrasse, apenas sorria, porque estar ao seu lado tornava tudo mais de boa. 💕</p>
+        </div>
+
+        <!-- Nova aba -->
+        <section id="nova-aba">
+            <h2>O MAIS BONITO:</h2>
+            <p>Eu amo que nossa história começou com os dois no lugar certo e na hora certa, sem nenhuma intenção, apenas duas pessoas destinadas a se encontrar. 💖</p>
+        </section>
+
+        <a 
+          href="https://youtu.be/vZcjAmfkemk?si=gU7vz0VFkhd_CSq0" class="botao-musica" target="_blank">SUA RESPOSTA É SIM? APERTA AQUI RSRS</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nosso Amor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
